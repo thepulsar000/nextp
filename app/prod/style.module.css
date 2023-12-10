@@ -1,0 +1,89 @@
+.product_top{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort{
+    display: flex;
+    gap: 30px;
+}
+
+.products{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+.product{
+  height: 70vh;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.163);
+}
+.upper_prod{
+  height: 70%;
+}
+.upper_prod img{
+  width: 100%;
+  height: 100%;
+}
+.lower_prod{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-inline-start: 1em;
+}
+/* Flex is for the Burger pizza and Prize */
+.flex{
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+.flex h4{
+  width: 50%;
+}
+
+.stars{
+  display: flex;
+}
+.stars div{
+  width: 15px;
+  height: 15px;
+}
+.stars div img{
+  width: 100%;
+  height: 100%;
+}
+.whitecart{
+    width: 15px;
+    height: 15px;
+}
+.whitecart img{
+    width: 100%;
+    height: 100%;
+}
+
+/* DETAILS */
+.details{
+  height: 80vh;
+  padding-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+
+@media (max-width: 700px){
+  .products{
+    grid-template-columns: 1fr;
+    padding: 1em;
+  }
+}
+@media (min-width: 701px ) and (max-width: 1200px){
+  .products{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    padding: 0.5em;
+  }
+}

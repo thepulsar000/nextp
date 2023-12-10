@@ -1,0 +1,11 @@
+
+.product_top{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort{
+    display: flex;
+    gap: 30px;
+}

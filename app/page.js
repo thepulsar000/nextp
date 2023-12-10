@@ -1,95 +1,136 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+// import Image from 'next/image'
+import styles from "./page.module.css";
+import pizza from "../public/pizza.png";
+import Image from "next/image";
+import onions from "../public/onions.png";
+import vegpiz from "../public/vegpiz.png";
+import scoop from "../public/scooped_piz.png";
+import garlic from "../public/garlic.png";
+import sliced from "../public/sliced.png";
+import leaf from "../public/leaf.png";
+import whitecart from "../public/shopping-cart-white.png";
+// import Link from "next/link";
+import {Products} from './prod/page';
+import Strength from "./strength";
+import Testimonials from "./testimonial";
+import { Heading } from "./heading";
+// import { Button } from "./heading";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+      {/* FIRST SECTION */}
+      <section className={styles.header}>
+        <div className={`${styles.main_div} ${styles.first}`}>
+          <h1>
+            Handmade,
+            <br /> With an Extra <br />
+            Pinch of <span className={styles.red}>Love</span>
+          </h1>
+          <p className={styles.font}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+            obcaecati suscipit ipsa itaque saepe cum assumenda quam iusto natus
+            pariatur
           </p>
-        </a>
-      </div>
+          <div>
+            <button>
+              <div className={`${styles.whitecart}`}>
+                <Image src={whitecart} alt="A white cart icon" />
+              </div>
+              <p>ORDER NOW</p>
+            </button>
+          </div>
+        </div>
+        <div className={`${styles.main_div} ${styles.second}`}>
+          <div className={`${styles.pizza_onion}`}>
+            <div className={`${styles.pizza}`}>
+              <Image
+                src={pizza}
+                placeholder="blur"
+                alt="Pizza with yellow toppings"
+              />
+            </div>
+
+            <div className={`${styles.onion}`}>
+              <div className={`${styles.onions}`}>
+                <Image src={onions} placeholder="blur" alt="Sliced Onions" />
+              </div>
+              <div className={`${styles.vegpiz}`}>
+                <Image
+                  src={vegpiz}
+                  placeholder="blur"
+                  alt="Pizza with vegetables"
+                />
+              </div>
+            </div>
+          </div>
+          <div className={`${styles.semi_circle}`}></div>
+        </div>
+      </section>
+
+      {/* SECOND SECTION */}
+      <section className={styles.piz_garlic}>
+        {/* First div */}
+        <div className={`${styles.scoop}`}>
+          <Image src={scoop} placeholder="blur" alt="Pizza with vegetables" />
+        </div>
+        {/* Second div */}
+        <div>
+          <h2>Daily fresh and always tasty</h2>
+          <div className={`${styles.garlic_text}`}>
+            <p>
+              There are many variations of passages of Lorem ipsum, dolor sit
+              amet consectetur adipisicing elit.
+            </p>
+            <div className={`${styles.garlic}`}>
+              <Image
+                src={garlic}
+                placeholder="blur"
+                alt="Pizza with vegetables"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* THIRD SECTION */}
+
+      <section>
+        <Heading title="Popular Dishes" subtitle="Browse our Menu" />
+        <div className={`${styles.menu}`}>
+          <Products />
+        </div>
+      </section>
+
+      {/* FOURTH SECTION */}
+      <section className={`${styles.strength}`}>
+        <div>
+          <Heading title="Our Strength" subtitle="Why We Are The Best?" />
+        </div>
+        <div>
+          <Strength />
+        </div>
+        <div className={`${styles.sliced}`}>
+          <Image src={sliced} />
+        </div>
+      </section>
+
+      {/* FIFTH SECTION */}
+      <section>
+        <div className={`${styles.leaf}`}>
+          <Image
+            src={leaf}
+            placeholder="blur"
+            alt="Pizza with yellow toppings"
+          />
+        </div>
+        <div>
+          <Heading title="Customer Feedback" subtitle="Client Testimonials" />
+        </div>
+        <div>
+          <Testimonials />
+        </div>
+      </section>
     </main>
-  )
+  );
 }
