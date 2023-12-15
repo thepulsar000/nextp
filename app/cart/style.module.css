@@ -14,7 +14,6 @@
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  /* border-bottom: 2px solid black; */
 }
 .table thead{
     border-bottom: 2px solid rgb(214, 207, 207);

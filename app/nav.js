@@ -4,6 +4,7 @@ import pizzon from "../public/pizza-logo.png";
 import tomato from "../public/tomato.png";
 import search from '../public/search.png';
 import bluecart from '../public/shopping-cart-blue.png';
+import ham from '../public/ham.png';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -25,19 +26,23 @@ export default function Nav() {
             <Link href="./prod">PRODUCT</Link>
           </li>
           <li>PAGES</li>
-          <li><Link href="./about">BLOG</Link></li>
+          <li>
+            <Link href="./about">BLOG</Link>
+          </li>
           <li>CONTACT</li>
           <div className="navsearch">
             <div>
               <Image src={search} alt="" />
             </div>
-
             <Link href="./cart">
-            <div>
-              <Image src={bluecart} alt="" />
-            </div>
+              <div>
+                <Image src={bluecart} alt="" />
+              </div>
             </Link>
           </div>
+        </div>
+        <div className="ham">
+          <Image src={ham} alt="" />
         </div>
       </nav>
     </>

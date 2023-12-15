@@ -3,7 +3,7 @@ import { Button } from "./heading";
 
 export default function Footer() {
   return (
-    <div className={`${styles.footer}`}>
+    <footer className={`${styles.footer}`}>
       <div className={`${styles.gap}`}>
         <h4>INFORMATION</h4>
         <li>Home</li>
@@ -35,6 +35,6 @@ export default function Footer() {
           <Button text="SIGN UP" />
         </div>
       </div>
-    </div>
+    </footer>
   );
 }

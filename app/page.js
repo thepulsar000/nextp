@@ -104,9 +104,7 @@ export default function Home() {
 
       {/* FOURTH SECTION */}
       <section className={`${styles.strength}`}>
-        <div>
-          <Heading title="Our Strength" subtitle="Why We Are The Best?" />
-        </div>
+        <Heading title="Our Strength" subtitle="Why We Are The Best?" />
         <div>
           <Strength />
         </div>
@@ -124,9 +122,7 @@ export default function Home() {
             alt="Pizza with yellow toppings"
           />
         </div>
-        <div>
-          <Heading title="Customer Feedback" subtitle="Client Testimonials" />
-        </div>
+        <Heading title="Customer Feedback" subtitle="Client Testimonials" />
         <div>
           <Testimonials />
         </div>

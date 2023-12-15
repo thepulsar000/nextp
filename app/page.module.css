@@ -112,9 +112,11 @@
     justify-content: center;
     padding: 0;
     text-align: center;
+    /* border: 2px solid brown; */
   }
   .second{
     display: none;
+    /* border: 2px solid brown; */
   }
   .font{
     padding-bottom: 1.7em;
@@ -123,6 +125,7 @@
 @media (min-width: 701px ) and (max-width: 1200px){
   .vegpiz{
     display: none;
+    /* border: 2px solid brown; */
   }
   .semi_circle{
     display: none;
@@ -130,6 +133,7 @@
   .pizza{
     width: 88%;
     height: 42%;
+    /* border: 2px solid brown; */
   }
 }
 
@@ -180,13 +184,16 @@
 }
 
 @media (max-width: 1200px){
-  .scoop {
-    display: none;
-  }
   .piz_garlic{
     height: 60vh;
+    flex-direction: column;
     text-align: center;
+    padding-bottom: 4em;
   }
+  .scoop {
+    /* border: 2px solid brown; */
+  }
+
   .piz_garlic div:nth-of-type(2) h2{
     width: 100%;
     text-align: center;
@@ -199,7 +206,7 @@
 }
 @media (min-width: 701px ) and (max-width: 1200px){
   .scoop{
-    display: none;
+    /* display: none; */
   }
   
 }
@@ -275,7 +282,7 @@
 /* ANOTHER SECTION */
 .leaf{
   /* border: 2px solid red; */
-  width: 10%;
+  width: 100px;
   height: 15vh;
 }
 .leaf img{
