@@ -1,5 +1,6 @@
 nav{
-    background-color: #fff;
+    /* border: 2px solid blue; */
+    background-color: white;
     padding-inline: 2em;
     height: 10vh;
     font-size: 14px;
@@ -12,7 +13,7 @@ nav{
 }
 .pizzon{
     width: 90px;
-    height: 90px;
+    /* height: fit-content; */
     padding: 0.5em ;
     /* border: 2px solid brown; */
 }
@@ -32,6 +33,7 @@ nav{
     display: flex;
     gap: 20px;
     align-items: center;
+    /* border: 2px solid rgb(4, 37, 16); */
 }
 li{
     text-decoration: none;
@@ -43,7 +45,7 @@ a{
 }
 
 .navsearch{
-    padding-left: 1em;
+    /* padding-left: 1em; */
     display: flex;
     gap: 10px;
 }
@@ -64,16 +66,25 @@ a{
     .list{
         display: none;
     }
+    .tomato{
+        display: none;
+    }
     .ham{
     display: block;
     width: 50px;
     height: 50px;
     position: relative;
     top: 10px;
+    border: 2px solid black;
     }
     .ham img{
         width: 100%;
         height: 100%;
+    }
+    .pizzon{
+        width: 80px;
+        height: 80px;
+        /* padding-right: 1.5em; */
     }
 }
 

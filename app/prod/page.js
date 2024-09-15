@@ -1,3 +1,4 @@
+"use client";
 
 import styles from "./style.module.css";
 import "../globals.css";
@@ -7,6 +8,7 @@ import bread from "./public/bread-salad.jpg";
 // import { Button } from "./heading";
 import star from "./public/star.png";
 import whitecart from "./public/shopping-cart-white.png";
+import { useRouter } from "next/router";
 
 
 const Details = [
@@ -42,9 +44,14 @@ const Details = [
 
 function ProductDiv(props) {
   const { img, text, number, desc,id } = props;
+  // const data = {img, desc, text, id, number}
+  // const router = useRouter()
+  // function handleClick(id){
+  //   return {pathname: `./prod/${id}`, query: {data}}
+  // }
   return (
     <div className={`${styles.product}`}>
-      <Link href={`./prod/${id}`}>
+      <Link href="./prod">
         <div className={`${styles.upper_prod}`}>
           <Image src={img} />
         </div>

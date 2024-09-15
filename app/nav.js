@@ -8,6 +8,13 @@ import ham from '../public/ham.png';
 import Image from "next/image";
 import Link from "next/link";
 
+// function showNavBar(e){
+//   e.prevenrDefault();
+//   console.log("Yayyy");
+// }
+
+
+
 export default function Nav() {
   return (
     <>
@@ -41,9 +48,11 @@ export default function Nav() {
             </Link>
           </div>
         </div>
-        <div className="ham">
-          <Image src={ham} alt="" />
-        </div>
+        <Link href="./navbar">
+          {/* <div className="ham">
+            <Image src={ham} alt="" />
+          </div> */}
+        </Link>
       </nav>
     </>
   );
